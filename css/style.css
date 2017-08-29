@@ -1,0 +1,94 @@
+/* CSS Document */
+/* RESET */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: top; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: inherit; }
+
+/* SET VARIABLES ---------------------------------------- */
+/* GENERAL SETTINGS ------------------------------------- */
+/* PARALLAX ------------------------------------- */
+.art, .art_layer {
+  height: 1000px; }
+
+#parallax {
+  display: block; }
+
+#nonparallax {
+  display: none;
+  background-image: url("../images/art-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+
+.art {
+  position: relative;
+  z-index: 10; }
+  .art_layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute; }
+    .art_layer--0 {
+      background-image: url("../img/parallax/01.png");
+      background-color: #ccd475; }
+    .art_layer--1 {
+      background-image: url("../img/parallax/02.png"); }
+    .art_layer--2 {
+      background-image: url("../img/parallax/03.png"); }
+    .art_layer--3 {
+      background-image: url("../img/parallax/04.png"); }
+    .art_layer--4 {
+      background-image: url("../img/parallax/05.png"); }
+    .art_layer--5 {
+      background-image: url("../img/logo2.png"); }
+    .art_layer--6 {
+      background-image: url("../img/parallax/06.png"); }
+    .art_layer--8 {
+      background-image: url("../img/parallax/07.png"); }
+
+.art_layer.parallax {
+  position: fixed; }
+
+.maincontain {
+  background-color: #ccd475;
+  position: relative;
+  padding: 100px 0;
+  z-index: 98;
+  text-align: center; }
+  .maincontain-h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    letter-spacing: -3px;
+    color: #545a38; }
+  .maincontain-span {
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */
