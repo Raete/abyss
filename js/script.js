@@ -19,48 +19,6 @@ function castParallax() {
 		}
 	});
 
-
 }
 
-function dispelParallax() {
-	$("#nonparallax").css('display','block');
-	$("#parallax").css('display','none');
-}
-
-function castSmoothScroll() {
-	$.srSmoothscroll({
-		step: 80,
-		speed: 300,
-		ease: 'linear'
-	});
-}
-
-
-
-function startSite() {
-
-	var platform = navigator.platform.toLowerCase();
-	var userAgent = navigator.userAgent.toLowerCase();
-
-	if ( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ) 
-	{
-		dispelParallax();
-	}
-	
-	else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
-	{
-		castParallax();					
-		if ($.browser.webkit)
-		{
-			castSmoothScroll();
-		}
-	}
-	
-	else
-	{
-		castParallax();
-	}
-
-}
-
-document.body.onload = startSite();
+document.body.onload = castParallax();
